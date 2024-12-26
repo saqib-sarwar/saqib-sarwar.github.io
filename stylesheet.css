@@ -63,6 +63,35 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'Campton';
+  src: url(fonts/campton/CamptonBook.otf) format('opentype');
+  /* url(fonts/campton/CamptonRegular.otf) format('opentype'); */
+  /* url(fonts/campton/CamptonBlack.otf) format('opentype'),
+        url(fonts/campton/CamptonBlackItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonBold.otf) format('opentype'),
+        url(fonts/campton/CamptonBoldItalic.otf) format('opentype'),
+        
+        url(fonts/campton/CamptonBookItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonExtraBold.otf) format('opentype'),
+        url(fonts/campton/CamptonExtraBoldItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonExtraLight.otf) format('opentype'),
+        url(fonts/campton/CamptonExtraLightItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonHeavy.otf) format('opentype'),
+        url(fonts/campton/CamptonHeavyItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonLight.otf) format('opentype'),
+        url(fonts/campton/CamptonLightItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonMedium.otf) format('opentype'),
+        url(fonts/campton/CamptonMediumItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonSemiBold.otf) format('opentype'),
+        url(fonts/campton/CamptonSemiBoldItalic.otf) format('opentype'),
+        url(fonts/campton/CamptonThin.otf) format('opentype'),
+        url(fonts/campton/CamptonThinItalic.otf) format('opentype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -133,4 +162,18 @@ span.highlight {
 mark {
   background-color: rgb(68, 76, 197);
   color: rgb(255, 255, 255);
+}
+
+#quotation {
+  text-align: center;
+  font-family: 'Campton', Helvetica, Arial, sans-serif; /* Fallback fonts */
+  font-weight: normal; /* Ensure regular weight */
+  font-size: larger; /* Adjust size for quotes */
+  line-height: 1.5; /* Improves readability */
+}
+
+#quotation span {
+  font-size: smaller; /* Adjust size for references */
+  font-style: italic;
+  font-weight: normal; /* Ensure references are also not bold */
 }
