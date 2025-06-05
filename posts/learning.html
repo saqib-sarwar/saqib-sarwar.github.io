@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The world of Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html">Blog</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;margin:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;">
+                    <h1>The world of Machine Learning</h1>
+                    <p><i>Published on: March 7, 2025</i></p>
+
+                    <p>Ever since humans realized their consciousness, the habit of learning has enabled them to continuously unravel the unprecedented mysteries of the Universe.</p>
+                    <p>Here, I will mention an extensive list of different kinds of learning related to Machine Learning</p>
+                    <!-- <h2>1. Introduction</h2>
+                    <p>In this post, we'll explore the theoretical foundations of VAEs, their architecture, and how they differ from traditional autoencoders.</p>
+
+                    <h2>2. Mathematical Formulation</h2>
+                    <pre><code>
+L(θ, ϕ) = E_q[ log p(x|z) ] - D_KL(q(z|x) || p(z))
+                    </code></pre>
+
+                    <h2>3. Implementation in PyTorch</h2>
+                    <pre><code class="language-python">
+import torch
+import torch.nn as nn
+
+class VAE(nn.Module):
+    def __init__(self):
+        super(VAE, self).__init__()
+        self.encoder = nn.Linear(784, 400)
+        self.mu = nn.Linear(400, 20)
+        self.log_var = nn.Linear(400, 20)
+
+    def forward(self, x):
+        hidden = torch.relu(self.encoder(x))
+        mu = self.mu(hidden)
+        log_var = self.log_var(hidden)
+        return mu, log_var
+                    </code></pre>
+
+                    <h2>4. Conclusion</h2>
+                    <p>VAEs are powerful generative models that combine deep learning and Bayesian inference...</p> -->
+                    <h2>1. Supervised Learning</h2>
+                    <p>Supervised learning is a type of machine learning where the model is trained on labeled data. The algorithm learns to map input data to the correct output labels.</p>
+                    <p>How does model do Supervised learning?</p>
+                    <p>1. Data Collection: The model is trained on a dataset that contains input-output pairs.</p>
+                    <p>2. Feature Extraction: The model extracts features from the input data to learn the underlying patterns.</p>
+                    <p>3. Model Training: The model is trained using a loss function that measures the difference between the predicted output and the actual output.</p>
+                    <p>4. Model Evaluation: The model is evaluated on a separate validation set to measure its performance.</p>
+                    <p>Examples: Linear Regression, Logistic Regression, Decision Trees, Support Vector Machines (SVM), Neural Networks.</p>
+                    <p>Applications: Image classification, spam detection, sentiment analysis.</p>
+                    <h2>2. Unsupervised Learning</h2>
+                    <p>Unsupervised learning is a type of machine learning where the model is trained on unlabeled data. The algorithm tries to learn the underlying structure of the data without any explicit labels.</p>
+                    <p>How does model do Unsupervised learning?</p>
+                    <p>1. Data Collection: The model is trained on a dataset that contains only input data without any labels.</p>
+                    <p>2. Feature Extraction: The model extracts features from the input data to learn the underlying patterns.</p>
+                    <p>3. Clustering: The model groups similar data points together based on the learned features.</p>
+                    <p>4. Dimensionality Reduction: The model reduces the dimensionality of the data to visualize it in a lower-dimensional space.</p>
+                    <p>5. Anomaly Detection: The model identifies outliers or anomalies in the data based on the learned features.</p>
+                    <p>6. Generative Modeling: The model learns to generate new data points that are similar to the training data.</p>
+                    <p>7. Evaluation: The model is evaluated based on its ability to cluster, reduce dimensionality, or generate new data points.</p>
+                    <p>Examples: K-Means Clustering, Hierarchical Clustering, Principal Component Analysis (PCA), t-Distributed Stochastic Neighbor Embedding (t-SNE).</p>
+                    <p>Applications: Customer segmentation, anomaly detection, data compression.</p>
+                    <h2>3. Semi-Supervised Learning</h2>
+                    <p>Semi-supervised learning is a type of machine learning that combines both labeled and unlabeled data. The model is trained on a small amount of labeled data and a large amount of unlabeled data.</p>
+                    <p>How does model do Semi-Supervised learning?</p>
+                    <p>1. Pre-training: The model is first trained on the labeled data to learn the initial parameters.</p>
+                    <p>2. Fine-tuning: The model is then fine-tuned on the unlabeled data to improve its performance.</p>
+                    <p>3. Pseudo-labeling: The model generates pseudo-labels for the unlabeled data and retrains itself using these labels.</p>
+                    <p>Examples: Self-training, Co-training, Graph-based methods.</p>
+                    <p>Applications: Image classification, text classification, speech recognition.</p>
+                    <h2>4. Reinforcement Learning</h2>
+                    <p>Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent receives feedback in the form of rewards or penalties based on its actions.</p>
+                    <p>How does model do Reinforcement learning?</p>
+                    <p>1. Exploration: The agent explores the environment to gather information about the state and actions.</p>
+                    <p>2. Exploitation: The agent uses the information gathered to make decisions that maximize its rewards.</p>
+                    <p>3. Policy update: The agent updates its policy based on the feedback received from the environment.</p>
+                    <p>Examples: Q-learning, Deep Q-Networks (DQN), Proximal Policy Optimization (PPO).</p>
+                    <p>Applications: Game playing, robotics, autonomous vehicles.</p>
+                    <h2>5. Transfer Learning</h2>
+                    <p>Transfer learning is a type of machine learning where a model trained on one task is reused for another related task. The model leverages the knowledge gained from the first task to improve its performance on the second task.</p>
+                    <p>How does model do Transfer learning?</p>
+                    <p>1. Pre-trained model: A model is pre-trained on a large dataset for a specific task.</p>
+                    <p>2. Fine-tuning: The pre-trained model is fine-tuned on a smaller dataset for a related task.</p>
+                    <p>3. Feature extraction: The pre-trained model is used as a feature extractor for the new task.</p>
+                    <p>4. Evaluation: The model is evaluated based on its performance on the new task.</p>
+                    <p>Examples: Image classification, natural language processing, speech recognition.</p>
+                    <p>Applications: Image classification, text classification, speech recognition.</p>
+                    <h2>6. Active Learning</h2>
+                    <p>Active learning is a type of machine learning where the model actively selects the data it wants to learn from. The model queries an oracle (human annotator) to label the data points it is uncertain about.</p>
+                    <p>How does model do Active learning?</p>
+                    <p>1. Query selection: The model selects the most informative data points to query the oracle.</p>
+                    <p>2. Oracle query: The model queries the oracle to label the selected data points.</p>
+                    <p>3. Model update: The model updates its parameters based on the newly labeled data points.</p>
+                    <p>4. Iteration: The process is repeated until the model reaches a desired level of performance.</p>
+                    <p>Examples: Uncertainty sampling, query-by-committee, expected model change.</p>
+                    <p>Applications: Image classification, text classification, speech recognition.</p>
+                    <h2>7. Multi-task Learning</h2>
+                    <p>Multi-task learning is a type of machine learning where a model is trained on multiple tasks simultaneously. The model learns to share knowledge between the tasks to improve its performance.</p>
+                    <p>How does model do Multi-task learning?</p>
+                    <p>1. Shared representation: The model learns a shared representation that captures the commonalities between the tasks.</p>
+                    <p>2. Task-specific layers: The model has task-specific layers that learn the unique features of each task.</p>
+                    <p>3. Joint training: The model is trained on all tasks simultaneously to learn the shared representation and task-specific features.</p>
+                    <p>4. Evaluation: The model is evaluated based on its performance on each task.</p>
+                    <p>Examples: Multi-task neural networks, multi-task reinforcement learning.</p>
+                    <p>Applications: Natural language processing, computer vision, speech recognition.</p>
+                    <h2>8. Federated Learning</h2>
+                    <p>Federated learning is a type of machine learning where the model is trained on decentralized data. The model is trained on multiple devices without sharing the data with a central server.</p>
+                    <p>How does model do Federated learning?</p>
+                    <p>1. Local training: The model is trained on each device using the local data.</p>
+                    <p>2. Model aggregation: The model updates are sent to a central server for aggregation.</p>
+                    <p>3. Global model update: The central server aggregates the model updates and sends the updated model back to the devices.</p>
+                    <p>4. Iteration: The process is repeated until the model reaches a desired level of performance.</p>
+                    <p>Examples: Federated averaging, federated stochastic gradient descent.</p>
+                    <p>Applications: Mobile devices, IoT devices, healthcare.</p>
+                    <h2>9. Online Learning</h2>
+                    <p>Online learning is a type of machine learning where the model learns from data in a sequential manner. The model updates its parameters as new data arrives.</p>
+                    <p>How does model do Online learning?</p>
+                    <p>1. Data stream: The model receives a continuous stream of data points.</p>
+                    <p>2. Incremental update: The model updates its parameters incrementally as new data arrives.</p>
+                    <p>3. Evaluation: The model is evaluated based on its performance on the data stream.</p>
+                    <p>Examples: Stochastic gradient descent, online support vector machines.</p>
+                    <p>Applications: Stock market prediction, real-time recommendation systems.</p>
+                    <h2>10. Self-supervised Learning</h2>
+                    <p>Self-supervised learning is a type of machine learning where the model learns to generate labels from the input data itself. The model uses the input data to create pseudo-labels for training.</p>
+                    <p>How does model do Self-supervised learning?</p>
+                    <p>1. Data augmentation: The model generates multiple augmented versions of the input data.</p>
+                    <p>2. Pseudo-label generation: The model generates pseudo-labels for the augmented data based on the original data.</p>
+                    <p>3. Model training: The model is trained on the augmented data with pseudo-labels.</p>
+                    <p>4. Evaluation: The model is evaluated based on its performance on the original data.</p>
+                    <p>Examples: Contrastive learning, masked language modeling.</p>
+                    <p>Applications: Image classification, natural language processing, speech recognition.</p>
+                    <h2>11. Continual Learning</h2>
+                    <p>Continual learning is a type of machine learning where the model learns from a continuous stream of data without forgetting previously learned knowledge. The model adapts to new tasks while retaining the knowledge from previous tasks.</p>
+                    <p>How does model do Continual learning?</p>
+                    <p>1. Task identification: The model identifies the current task from the data stream.</p>
+                    <p>2. Knowledge retention: The model retains the knowledge from previous tasks while learning the new task.</p>
+                    <p>3. Task adaptation: The model adapts its parameters to learn the new task.</p>
+                    <p>4. Evaluation: The model is evaluated based on its performance on the new task and the retained tasks.</p>
+                    <p>Examples: Elastic weight consolidation, progressive neural networks.</p>
+                    <p>Applications: Robotics, autonomous vehicles, lifelong learning.</p>
+                    <h2>12. Curriculum Learning</h2>
+                    <p>Curriculum learning is a type of machine learning where the model is trained on a sequence of tasks that gradually increase in difficulty. The model learns to solve easier tasks before moving on to harder tasks.</p>
+                    <p>How does model do Curriculum learning?</p>
+                    <p>1. Task sequencing: The model is presented with a sequence of tasks that gradually increase in difficulty.</p>
+                    <p>2. Task selection: The model selects the next task based on its performance on the previous tasks.</p>
+                    <p>3. Model training: The model is trained on the selected task.</p>
+                    <p>4. Evaluation: The model is evaluated based on its performance on the selected task.</p>
+                    <p>Examples: Curriculum reinforcement learning, curriculum neural networks.</p>
+                    <p>Applications: Robotics, autonomous vehicles, education.</p>
+                    <h2>13. Meta Learning</h2>
+                    <p>Meta learning is a type of machine learning where the model learns to learn. The model learns to adapt to new tasks quickly by leveraging the knowledge gained from previous tasks.</p>
+                    <p>How does model do Meta learning?</p>
+                    <p>1. Task distribution: The model is trained on a distribution of tasks.</p>
+                    <p>2. Task adaptation: The model learns to adapt its parameters to new tasks quickly.</p>
+                    <p>3. Model evaluation: The model is evaluated based on its performance on new tasks.</p>
+                    <p>4. Meta-optimization: The model is optimized based on its performance on the new tasks.</p>
+                    <p>Examples: Model-agnostic meta-learning (MAML), prototypical networks.</p>
+                    <p>Applications: Few-shot learning, zero-shot learning, reinforcement learning.</p>
+                    <h2>14. Bayesian Learning</h2>
+                    <p>Bayesian learning is a type of machine learning where the model learns from data using Bayesian inference. The model updates its beliefs based on the observed data.</p>
+                    <p>How does model do Bayesian learning?</p>
+                    <p>1. Prior distribution: The model starts with a prior distribution over the parameters.</p>
+                    <p>2. Likelihood: The model computes the likelihood of the observed data given the parameters.</p>
+                    <p>3. Posterior distribution: The model updates its beliefs based on the observed data using Bayes' theorem.</p>
+                    <p>4. Model evaluation: The model is evaluated based on its posterior distribution.</p>
+                    <p>Examples: Bayesian linear regression, Gaussian processes.</p>
+                    <p>Applications: Uncertainty quantification, active learning, model selection.</p>
+                    <h2>15. Ensemble Learning</h2>
+                    <p>Ensemble learning is a type of machine learning where multiple models are combined to improve performance. The models work together to make predictions.</p>
+                    <p>How does model do Ensemble learning?</p>
+                    <p>1. Model training: Multiple models are trained on the same dataset.</p>
+                    <p>2. Model aggregation: The predictions of the models are combined using techniques like voting, averaging, or stacking.</p>
+                    <p>3. Model evaluation: The ensemble model is evaluated based on its performance.</p>
+                    <p>Examples: Bagging, boosting, stacking.</p>
+                    <p>Applications: Image classification, text classification, speech recognition.</p>
+                    <h2>16. Conclusion</h2>
+                    <p>In this post, we explored various types of learning in machine learning, including supervised, unsupervised, semi-supervised, reinforcement, transfer, active, multi-task, federated, online, self-supervised, continual, curriculum, meta, Bayesian, and ensemble learning. Each type of learning has its own unique characteristics and applications.</p>
+                    <p>Understanding these different types of learning is crucial for selecting the right approach for a given problem. As machine learning continues to evolve, new types of learning will emerge, further expanding the possibilities of what can be achieved with this powerful technology.</p>
+                    <p>We did not cover Generative modeling in this post, and will talk about it, some other day.</p>
+                    <h2>17. References</h2>
+                    <p>1. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.</p>
+                    <p>2. Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.</p>
+                    <p>3. Murphy, K. P. (2012). Machine Learning: A Probabilistic Perspective. MIT Press.</p>
+                    <p>4. Sutton, R. S., & Barto, A. G. (2018). Reinforcement Learning: An Introduction. MIT Press.</p>
+                    <p>5. Zhang, Y., & Yang, Q. (2017). A Survey on Multi-Task Learning. IEEE Transactions on Knowledge and Data Engineering, 29(12), 1-1.</p>
+                    <p>6. Pan, S. J., & Yang, Q. (2010). A Survey on Transfer Learning. IEEE Transactions on Knowledge and Data Engineering, 22(10), 1345-1359.</p>
+                    <p>7. Li, Z., & Hoiem, D. (2016). Learning without Forgetting. IEEE Transactions on Pattern Analysis and Machine Intelligence, 40(12), 2935-2947.</p>
+                    
+                    <hr>
+                    <p><a href="../blog.html">← Back to Blog</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

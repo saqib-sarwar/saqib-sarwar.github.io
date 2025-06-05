@@ -177,3 +177,45 @@ mark {
   font-style: italic;
   font-weight: normal; /* Ensure references are also not bold */
 }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+code {
+  background-color: #eee;
+  padding: 5px;
+  display: block;
+  white-space: pre-wrap;
+  border-radius: 5px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
