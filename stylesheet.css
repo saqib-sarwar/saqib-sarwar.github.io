@@ -202,10 +202,19 @@ code {
 .navbar {
   background-color: #f8f8f8;
   overflow: hidden;
-  padding: 10px 20px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-container {
+  width: 100%;
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .navbar .nav-left {
