@@ -1,3 +1,10 @@
+:root {
+  --bg-color: #0d0d0d;     /* default background (black) */
+  --text-color: #f0f0f0;   /* main text color */
+  --accent-color: #b22222; /* default accent (maroon) */
+  --card-bg: #1a1a1a;      /* slightly lighter than bg */
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -66,41 +73,21 @@
 @font-face {
   font-family: 'Campton';
   src: url(fonts/campton/CamptonBook.otf) format('opentype');
-  /* url(fonts/campton/CamptonRegular.otf) format('opentype'); */
-  /* url(fonts/campton/CamptonBlack.otf) format('opentype'),
-        url(fonts/campton/CamptonBlackItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonBold.otf) format('opentype'),
-        url(fonts/campton/CamptonBoldItalic.otf) format('opentype'),
-        
-        url(fonts/campton/CamptonBookItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonExtraBold.otf) format('opentype'),
-        url(fonts/campton/CamptonExtraBoldItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonExtraLight.otf) format('opentype'),
-        url(fonts/campton/CamptonExtraLightItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonHeavy.otf) format('opentype'),
-        url(fonts/campton/CamptonHeavyItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonLight.otf) format('opentype'),
-        url(fonts/campton/CamptonLightItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonMedium.otf) format('opentype'),
-        url(fonts/campton/CamptonMediumItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonSemiBold.otf) format('opentype'),
-        url(fonts/campton/CamptonSemiBoldItalic.otf) format('opentype'),
-        url(fonts/campton/CamptonThin.otf) format('opentype'),
-        url(fonts/campton/CamptonThinItalic.otf) format('opentype'); */
   font-weight: normal;
   font-style: normal;
 }
 
 a {
-  color: #1772d0;
-  text-decoration: none;
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: var(--accent-color);
+  background-color: var(--card-bg);
+  text-decoration: underline;
 }
 
 body,
@@ -110,7 +97,8 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
+  color: var(--text-color);
 }
 
 strong {
@@ -121,17 +109,20 @@ strong {
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: var(--text-color);
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
+  color: var(--text-color);
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  color: var(--text-color);
 }
 
 .one {
@@ -160,38 +151,47 @@ span.highlight {
 }
 
 mark {
-  background-color: rgb(68, 76, 197);
-  color: rgb(255, 255, 255);
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 #quotation {
   text-align: center;
-  font-family: 'Campton', Helvetica, Arial, sans-serif; /* Fallback fonts */
-  font-weight: normal; /* Ensure regular weight */
-  font-size: larger; /* Adjust size for quotes */
-  line-height: 1.5; /* Improves readability */
+  font-family: 'Campton', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: larger;
+  line-height: 1.5;
+  color: var(--text-color);
+  font-style: italic;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 12px;
+  margin: 20px auto;
+  max-width: 80%;
 }
 
 #quotation span {
-  font-size: smaller; /* Adjust size for references */
+  font-size: smaller;
   font-style: italic;
-  font-weight: normal; /* Ensure references are also not bold */
+  font-weight: normal;
+  color: var(--text-color);
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
 h1, h2 {
-  color: #333;
+  color: var(--text-color);
 }
 
 code {
-  background-color: #eee;
+  background-color: var(--card-bg);
+  color: var(--accent-color);
   padding: 5px;
   display: block;
   white-space: pre-wrap;
@@ -200,7 +200,8 @@ code {
 
 /* Navigation Bar */
 .navbar {
-  background-color: #f8f8f8;
+  background-color: var(--bg-color);
+  border-bottom: 2px solid var(--accent-color);
   overflow: hidden;
   padding: 10px 0;
   display: flex;
@@ -226,15 +227,25 @@ code {
 }
 
 .navbar a {
-  color: rgb(77, 77, 77);
+  color: var(--text-color);
   text-decoration: none;
   padding: 14px 20px;
   display: inline-block;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background-color: #ffffff;
+  color: var(--accent-color);
+  background-color: var(--card-bg);
   transition: 0.2s;
 }
 
+/* Optional card/section styling */
+.card, .section {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 15px;
+}
