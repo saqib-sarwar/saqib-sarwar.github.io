@@ -15,6 +15,7 @@
     '"... wa tuʿizzu man tashāʾ wa tu dhzillu man tashāʾ ..." <span style="font-size: smaller; font-style: italic;">- Surah Aal-`Imran (The Family of Imran)</span>',
     '"Indeed, Allah loves those who rely upon Him."<span style="font-size: smaller; font-style: italic;">- Surah Aal-`Imran (The Family of Imran)</span>',
     '"And Allah loves the steadfast(those who persevere)."<span style="font-size: smaller; font-style: italic;">- Surah Aal-`Imran (The Family of Imran)</span>',
+    '"Never will you attain the good [reward] until you spend [in the way of Allah] from that which you love."<span style="font-size: smaller; font-style: italic;">- Surah Aal-`Imran (The Family of Imran)</span>',
 
     // Surah Al-Ma’idah
     '"...Whoever saves a life, it will be as if they saved all of humanity."<span style="font-size: smaller; font-style: italic;"> - Surah Al-Ma`idah (The Meal)</span>',
@@ -58,6 +59,9 @@
 
     // Surah Ar-Rahman
     '"So which of the favors of your Lord would you deny?"<span style="font-size: smaller; font-style: italic;">- Surah Ar-Rahman (The Most Merciful)</span>',
+
+    // Surah At-Talaq
+    "And whoever fears Allah – He will make for him a way out. And will provide for him from where he does not expect.<span style='font-size: smaller; font-style: italic;'> — Surah At-Talaq (The Divorce)</span>",
 
     // Surah Al-Mulk
     '"[He] who created death and life to test you [as to] which of you is best in deed. "<span style="font-size: smaller; font-style: italic;"> - Surah Mulk (The Kingdom)</span>',
