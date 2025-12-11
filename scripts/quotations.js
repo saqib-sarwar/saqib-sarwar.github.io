@@ -30,6 +30,9 @@
     // Surah Maryam
     '“And your Lord never forgets.” <span style="font-size: smaller; font-style: italic;">- Surah Maryam (Mary)</span>',
 
+    // Surah Taha
+    '"And whoever turns away from My remembrance - indeed, he will have a miserable life."<span style="font-size: smaller; font-style: italic;">- Surah TaHa</span>',
+
     // Surah Al-Anbiya
     '“And We test you with evil and with good as trial;” <span style="font-size: smaller; font-style: italic;">- Surah Al-Anbiya (The Prophets)</span>',
 
@@ -61,10 +64,16 @@
     '"So which of the favors of your Lord would you deny?"<span style="font-size: smaller; font-style: italic;">- Surah Ar-Rahman (The Most Merciful)</span>',
 
     // Surah At-Talaq
-    "And whoever fears Allah – He will make for him a way out. And will provide for him from where he does not expect.<span style='font-size: smaller; font-style: italic;'> — Surah At-Talaq (The Divorce)</span>",
+    '"And whoever fears Allah – He will make for him a way out. And will provide for him from where he does not expect."<span style="font-size: smaller; font-style: italic;"> — Surah At-Talaq (The Divorce)</span>',
 
     // Surah Al-Mulk
     '"[He] who created death and life to test you [as to] which of you is best in deed. "<span style="font-size: smaller; font-style: italic;"> - Surah Mulk (The Kingdom)</span>',
+
+    // Surah Az-Zalzalah
+    '"So whoever does an atom’s weight of good will see it."<span style="font-size: smaller; font-style: italic;"> — Surah Az-Zalzalah (The Earthquake)</span>',
+
+    // Surah Az-Zalzalah 
+    '"And whoever does an atom’s weight of evil will see it."<span style="font-size: smaller; font-style: italic;"> — Surah Az-Zalzalah (The Earthquake)</span>',
 
     // Surah At-Takathur
     '"Competition in [worldly] increase distracts you" <span style="font-size: smaller; font-style: italic;">- Surah At-Takāthur (Rivalry)</span>',
