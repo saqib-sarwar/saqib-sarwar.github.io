@@ -82,6 +82,7 @@
     '“Indeed, with hardship comes ease.” <span style="font-size: smaller; font-style: italic;">- Surah Ash-Sharh (The Relief)</span>',
 
     // Hadith sayings (at the end)
+    '"Verily, Allah does not look at your appearance or wealth, but rather He looks at your hearts and actions." <span style="font-size: smaller; font-style: italic;">- Prophet Muhammad (PBUH) (Sahih Muslim)</span>',
     '"The best of you are those who are best to their families." <span style="font-size: smaller; font-style: italic;">- Prophet Muhammad (PBUH) (Mishkat)</span>',
     '"The best of you are those who are best to their wives." <span style="font-size: smaller; font-style: italic;">- Prophet Muhammad (PBUH) (Al-Tirmidhi)</span>',
     '"The best of people are those who are most beneficial to people." <span style="font-size: smaller; font-style: italic;">- Prophet Muhammad (PBUH) (Tabarani)</span>'
