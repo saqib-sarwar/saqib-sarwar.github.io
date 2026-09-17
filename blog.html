@@ -5,6 +5,41 @@
     <title>Notes - Saqib Sarwar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        /* Style for the collapsible card */
+        .collapsible {
+            background-color: #f9f9f9;
+            color: #333;
+            cursor: pointer;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #e6e6e6;
+        }
+
+        .content {
+            padding: 0 12px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,11 +64,91 @@
                     <p>Welcome to my notes! Here are some of my latest articles:</p>
 
                     <ul>
-                        <!-- <li><a href="posts/learning.html">The world of Machine Learning</a> - <i>Feb 13, 2025</i></li> -->
-                        <!-- <li><a href="posts/federated-learning.html">Federated Learning: A New Era of Privacy</a> - <i>Jan 25, 2025</i></li> -->
-                        <li><a href="data/SOTA_Literature.pdf" target="_blank">In-Context Learning</a> - <i>Aug 17, 2025</i></li>
-                        <!-- <li><a href="posts/bayesian-inference.html">Bayesian Inference in Machine Learning</a> - <i>Dec 10, 2024</i></li> -->
+                        <li><a href="data/wsais.pdf" target="_blank">Introduction To Machine Learning Basics-II</a>, Certified Training Program - <i>"AI Basics and AI in Governance"</i> by Wadhwani School of AI and Intelligent Systems. <i>Sep 3-5, 2026</i></li>
                     </ul>
+
+                    <ul>
+                        <li><a href="data/SOTA_Literature.pdf" target="_blank">In-Context Learning</a> - <i>Aug 17, 2025</i></li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- Inspiration Section
+                    <h2>Inspiration</h2>
+                    <p>Click to expand and read some lines and poems that inspire me:</p> -->
+
+                    <!-- "If—" by Rudyard Kipling -->
+                    <!-- <button type="button" class="collapsible">"If—" by Rudyard Kipling</button>
+                    <div class="content">
+                        <p>
+                            If you can keep your head when all about you<br>
+                            Are losing theirs and blaming it on you,<br>
+                            If you can trust yourself when all men doubt you,<br>
+                            But make allowance for their doubting too;<br>
+                            If you can wait and not be tired by waiting,<br>
+                            Or being lied about, don’t deal in lies,<br>
+                            Or being hated, don’t give way to hating,<br>
+                            And yet don’t look too good, nor talk too wise:<br><br>
+
+                            If you can dream—and not make dreams your master;<br>
+                            If you can think—and not make thoughts your aim;<br>
+                            If you can meet with Triumph and Disaster<br>
+                            And treat those two impostors just the same;<br>
+                            If you can bear to hear the truth you’ve spoken<br>
+                            Twisted by knaves to make a trap for fools,<br>
+                            Or watch the things you gave your life to, broken,<br>
+                            And stoop and build ’em up with worn-out tools:<br><br>
+
+                            If you can make one heap of all your winnings<br>
+                            And risk it on one turn of pitch-and-toss,<br>
+                            And lose, and start again at your beginnings<br>
+                            And never breathe a word about your loss;<br>
+                            If you can force your heart and nerve and sinew<br>
+                            To serve your turn long after they are gone,<br>
+                            And so hold on when there is nothing in you<br>
+                            Except the Will which says to them: ‘Hold on!’<br><br>
+
+                            If you can talk with crowds and keep your virtue,<br>
+                            Or walk with Kings—nor lose the common touch,<br>
+                            If neither foes nor loving friends can hurt you,<br>
+                            If all men count with you, but none too much;<br>
+                            If you can fill the unforgiving minute<br>
+                            With sixty seconds’ worth of distance run,<br>
+                            Yours is the Earth and everything that’s in it,<br>
+                            And—which is more—you’ll be a Man, my son!<br><br>
+                        </p>
+                    </div>
+
+                    <button type="button" class="collapsible">Selected Couplets by Allama Iqbal (Mostly Urdu)</button>
+                    <div class="content">
+                        <p>
+                            Ghairat Hai Bari Cheez Jahan-e-Tagg-o-Dou Mein<br>
+                            Pehnati Hai Darvesh Ko Taj-e-Sar-E-Dara
+                        </p>
+
+                        <p>
+                            yaqīñ mohkam amal paiham mohabbat fātah-e-ālam<br>
+                            jihād-e-zindagānī meñ haiñ ye mardoñ kī shamshīreñ
+                        </p>
+                    </div> -->
+
+                    <!-- Poem by Dr. Khalid Javed (Hindi) -->
+                    <!-- <button type="button" class="collapsible">Main Baaghi Hoon by Dr. Khalid Javed (Hindi)</button>
+                    <div class="content">
+                        <p>
+                            मेरे हाथ में हक़ का झंडा है,<br>
+                            मेरे सिर पर ज़ुल्म का फंदा है,<br>
+                            मैं मरने से कब डरता हूँ,<br>
+                            मैं मौत की खातिर ज़िंदा हूँ।<br>
+                            मेरे ख़ून का सूरज चमकेगा,<br>
+                            तो बच्चा-बच्चा बोलेगा,<br><br>
+                            
+                            मैं बागी हूँ, मैं बागी हूँ,<br>
+                            जो चाहे मुझ पर ज़ुल्म करो,<br>
+                            मैं बागी हूँ, मैं बागी हूँ,<br>
+                            जो चाहे मुझ पर ज़ुल्म करो।
+                        </p>
+                    </div> -->
 
                     <hr>
                     <p><a href="index.html">← Back to Home</a></p>
@@ -41,5 +156,21 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- JavaScript for collapsible card -->
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
